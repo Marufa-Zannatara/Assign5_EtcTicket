@@ -1,0 +1,51 @@
+.banner{
+     max-width: 100% ; 
+     height: auto;
+}
+
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cardYellow{
+  background: #FFBF0F;
+  }
+
+  .cardPink{
+    background: #F78C9C;
+    }
+
+
+   /* Styles for the half-circle shapes */
+.half-circle {
+  position: absolute;
+  width: 20px;
+  height: 10px; 
+  background-color: rgb(255, 255, 253); 
+  border-radius: 50%;
+}
+
+.top-half {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 20px; /* Half of the height */
+  border-bottom-right-radius: 20px; /* Half of the height */
+}
+
+.bottom-half {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 20px; /* Half of the height */
+  border-top-right-radius: 20px; /* Half of the height */
+}
+
+.border-color {
+  border-color: lime;
+  border-width: 1px;
+}

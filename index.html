@@ -51,7 +51,7 @@
                     journey is not just about reaching your destination,<br>
                     but enjoying every moment along the way.  
                     </p>
-                    <button class="bg-lime-500 hover:bg-green-900 text-white font-semibold py-2 px-4 rounded mt-4">Buy Tickets</button>
+                    <button id="scrollToSelectSeat" class="bg-lime-500 hover:bg-green-900 text-white font-semibold py-2 px-4 rounded mt-4">Buy Tickets</button>
                 </div>
             </div>
         </div>
@@ -120,6 +120,7 @@
                 <div class="flex justify-center">
                     <div class="w-11/12 lg:w-3/4 xl:w-2/3 flex">
                         <div class="w-1/2 mx-1">
+                            <div id="selectSeatSection" class="border-t-2 border-lime-500 bg-slate-50 rounded-t-lg mt-7 overflow-hidden">
                             <!-- Content of the second  div added here -->
                             <h1 class="text-left text-gray-800 text-2xl font-bold mb-8">Select Your Seat</h1>
                             <hr class="w-full border-dashed border-gray-400">
@@ -142,10 +143,8 @@
                         <hr class="w-full border-dashed border-gray-400">
                         </div>
 
-                        
-                        
-                        
                         </div>
+                    </div>
 
                         
 
@@ -164,10 +163,19 @@
             
             
             
+
+            <script>
+                document.getElementById('scrollToSelectSeat').addEventListener('click', function() {
+                    // Scroll smoothly to the "Select Your Seat" section
+                    document.getElementById('selectSeatSection').scrollIntoView({ behavior: 'smooth' });
+                });
+            </script>
                 
     
     </body>
 </html>
+
+
 
 
 
